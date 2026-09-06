@@ -49,4 +49,3 @@ APP_BOOTSTRAP_MODULES=https://helex-solutions.github.io/helex-extensions/packs/t
 A dynamic `import()` cannot carry a Subresource Integrity hash, which is why `manifest.json`
 publishes a digest per pack and production installs verify it at deploy time rather than trusting
 this origin at boot.
-
