@@ -10,6 +10,7 @@ install names the packs it wants and gets exactly those in its theme picker.
 | [Helex platform themes](themes/platform.md) | `helex`, `tedi`, `matrix` | Helex, TEDI and Matrix — the three themes EMR ships with. Included for reference. |
 | [Classic Helex palettes](themes/legacy.md) | `evergreen`, `slate`, `wireframe` | Evergreen, Slate and Wireframe — shipped with EMR until the catalogue existed. |
 | [TalTech](themes/taltech.md) | `taltech` | Tallinn University of Technology, from the published TalTech design system. |
+| [AKK](themes/akk.md) | `akk` | TEHIK's Andmekirjelduskeskkond — the Estonian health-data description environment. |
 
 ## How a pack works
 

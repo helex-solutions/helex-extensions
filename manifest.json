@@ -110,6 +110,29 @@
           ]
         }
       ]
+    },
+    {
+      "id": "akk",
+      "name": "AKK",
+      "description": "TEHIK's Andmekirjelduskeskkond — the Estonian health-data description environment.",
+      "provides": [
+        "theme"
+      ],
+      "url": "https://helex-solutions.github.io/helex-extensions/packs/akk.js",
+      "sha256": "6dfa758586244f6a44c465505437e5db758f44ff3d52f6a085b40ece69730ff7",
+      "bytes": 3004,
+      "themes": [
+        {
+          "key": "akk",
+          "name": "AKK",
+          "algorithm": "light",
+          "swatch": [
+            "#007AAD",
+            "#5D6071",
+            "#EDEFF1"
+          ]
+        }
+      ]
     }
   ]
 }
