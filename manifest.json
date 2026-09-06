@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "emr-repo scripts/build-theme-packs.mjs",
+  "packs": [
+    {
+      "id": "platform",
+      "name": "Helex platform themes",
+      "description": "Helex, TEDI and Matrix — the three themes EMR ships with. Included for reference.",
+      "provides": [
+        "theme"
+      ],
+      "url": "https://helex-solutions.github.io/helex-extensions/packs/platform.js",
+      "sha256": "df13974007d84f2a492629fdb1d7eb6bfe7d9b833921d35da796879487c363f0",
+      "bytes": 5246,
+      "themes": [
+        {
+          "key": "helex",
+          "name": "Helex",
+          "algorithm": "light",
+          "swatch": [
+            "#1B6AB3",
+            "#2E7D6F",
+            "#F5F7FA"
+          ]
+        },
+        {
+          "key": "tedi",
+          "name": "TEDI",
+          "algorithm": "light",
+          "swatch": [
+            "#005AA3",
+            "#FF8000",
+            "#F9F9F9"
+          ]
+        },
+        {
+          "key": "matrix",
+          "name": "Matrix",
+          "algorithm": "dark",
+          "swatch": [
+            "#00FF41",
+            "#3DDC84",
+            "#080B08"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legacy",
+      "name": "Classic Helex palettes",
+      "description": "Evergreen, Slate and Wireframe — shipped with EMR until the catalogue existed.",
+      "provides": [
+        "theme"
+      ],
+      "url": "https://helex-solutions.github.io/helex-extensions/packs/legacy.js",
+      "sha256": "77135f19938e70f1c942c37c84fa69c6c75bedc925de9128c0ff5addfdc9354e",
+      "bytes": 3909,
+      "themes": [
+        {
+          "key": "evergreen",
+          "name": "Evergreen",
+          "algorithm": "light",
+          "swatch": [
+            "#2D7A4F",
+            "#3A7CA5",
+            "#F4F8F5"
+          ]
+        },
+        {
+          "key": "slate",
+          "name": "Slate",
+          "algorithm": "light",
+          "swatch": [
+            "#455A75",
+            "#6B7A8F",
+            "#F5F6F8"
+          ]
+        },
+        {
+          "key": "wireframe",
+          "name": "Wireframe",
+          "algorithm": "light",
+          "swatch": [
+            "#595959",
+            "#8C8C8C",
+            "#FAFAFA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taltech",
+      "name": "TalTech",
+      "description": "Tallinn University of Technology, from the published TalTech design system.",
+      "provides": [
+        "theme"
+      ],
+      "url": "https://helex-solutions.github.io/helex-extensions/packs/taltech.js",
+      "sha256": "79b5fb62f08e50067f244aa6427cb0eed6caa3f129a0b4d1a221a9300e768600",
+      "bytes": 2635,
+      "themes": [
+        {
+          "key": "taltech",
+          "name": "TalTech",
+          "algorithm": "light",
+          "swatch": [
+            "#342b60",
+            "#e4067e",
+            "#f6f6f8"
+          ]
+        }
+      ]
+    }
+  ]
+}

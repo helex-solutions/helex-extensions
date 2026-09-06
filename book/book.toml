@@ -1,0 +1,8 @@
+[book]
+title = "Helex extensions"
+description = "Themes and extension packs for Helex EMR installations"
+language = "en"
+src = "src"
+
+[output.html]
+default-theme = "light"

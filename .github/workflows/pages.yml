@@ -1,0 +1,90 @@
+name: Pages
+
+# Publishes the catalogue site: the mdBook store, plus the packs and manifest themselves.
+#
+# The packs have to sit at the SAME origin and the exact paths manifest.json advertises
+# (/packs/<id>.js), because that manifest is what an install reads to fetch and verify them. So the
+# book output is the site root and packs/ + manifest.json are copied in beside it — publishing only
+# the book would give a browsable catalogue serving nothing.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Pages needs these; the default GITHUB_TOKEN is read-only on a new repo.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never run two deployments at once, and never cancel one midway: a half-deployed site would
+# serve a manifest whose packs are not there yet.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  MDBOOK_VERSION: v0.4.40
+
+jobs:
+  build:
+    # Self-hosted, like every other workflow in this org — GitHub-hosted minutes are budgeted and
+    # an exhausted budget blocks hosted runners outright rather than queuing.
+    runs-on: [self-hosted, Linux, X64]
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install mdBook
+        run: |
+          mkdir -p "$RUNNER_TEMP/mdbook"
+          curl -fsSL "https://github.com/rust-lang/mdBook/releases/download/${MDBOOK_VERSION}/mdbook-${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar -xz -C "$RUNNER_TEMP/mdbook"
+          echo "$RUNNER_TEMP/mdbook" >> "$GITHUB_PATH"
+
+      - name: Build the store
+        run: mdbook build book
+
+      - name: Add the packs and manifest to the site
+        run: |
+          # mkdir + explicit glob, not `cp -r packs book/book/packs`: when the destination already
+          # exists cp nests the source INSIDE it, which is how an earlier cut published every pack
+          # at /packs/packs/<id>.js and served 404s for everything the catalogue described.
+          mkdir -p book/book/packs
+          cp packs/*.js book/book/packs/
+          cp manifest.json book/book/manifest.json
+
+      - name: Check every pack matches its published digest
+        # The last line of defence before an install fetches these. If the site ever serves a pack
+        # whose bytes differ from the manifest, fetch-theme-packs.sh reports an INTEGRITY FAILURE —
+        # an error that reads like tampering and would be diagnosed as such. Better to fail here.
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, sys
+          manifest = json.load(open('book/book/manifest.json'))
+          bad = []
+          for pack in manifest['packs']:
+              data = open(f"book/book/packs/{pack['id']}.js", 'rb').read()
+              actual = hashlib.sha256(data).hexdigest()
+              if actual != pack['sha256']:
+                  bad.append(f"{pack['id']}: manifest {pack['sha256'][:12]}… but file {actual[:12]}…")
+          if bad:
+              sys.exit("digest mismatch — the catalogue was edited without regenerating:\n  " + "\n  ".join(bad))
+          print(f"{len(manifest['packs'])} packs match their published digests")
+          PY
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: book/book
+
+  deploy:
+    needs: build
+    runs-on: [self-hosted, Linux, X64]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
