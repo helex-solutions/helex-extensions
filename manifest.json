@@ -119,7 +119,7 @@
         "theme"
       ],
       "url": "https://helex-solutions.github.io/helex-extensions/packs/akk.js",
-      "sha256": "6dfa758586244f6a44c465505437e5db758f44ff3d52f6a085b40ece69730ff7",
+      "sha256": "c93c56c9b105a4913387cca244c6ddd4a49a7b381bdf711f6a0b5b4dfd84b8d6",
       "bytes": 3004,
       "themes": [
         {
@@ -127,9 +127,9 @@
           "name": "AKK",
           "algorithm": "light",
           "swatch": [
-            "#007AAD",
+            "#0083BA",
             "#5D6071",
-            "#EDEFF1"
+            "#DBDFE2"
           ]
         }
       ]

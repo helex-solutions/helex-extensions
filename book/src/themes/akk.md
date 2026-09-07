@@ -4,7 +4,7 @@ TEHIK's Andmekirjelduskeskkond — the Estonian health-data description environm
 
 | | Theme | Key | Mode |
 |---|---|---|---|
-| <span style="display:inline-flex;gap:2px;vertical-align:middle"><span title="#007AAD" style="display:inline-block;width:28px;height:28px;border:1px solid #0002;background:#007AAD"></span><span title="#5D6071" style="display:inline-block;width:28px;height:28px;border:1px solid #0002;background:#5D6071"></span><span title="#EDEFF1" style="display:inline-block;width:28px;height:28px;border:1px solid #0002;background:#EDEFF1"></span></span> | **AKK** | `akk` | light |
+| <span style="display:inline-flex;gap:2px;vertical-align:middle"><span title="#0083BA" style="display:inline-block;width:28px;height:28px;border:1px solid #0002;background:#0083BA"></span><span title="#5D6071" style="display:inline-block;width:28px;height:28px;border:1px solid #0002;background:#5D6071"></span><span title="#DBDFE2" style="display:inline-block;width:28px;height:28px;border:1px solid #0002;background:#DBDFE2"></span></span> | **AKK** | `akk` | light |
 
 ## Install
 
