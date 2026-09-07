@@ -11,6 +11,7 @@ install names the packs it wants and gets exactly those in its theme picker.
 | [Classic Helex palettes](themes/legacy.md) | `evergreen`, `slate`, `wireframe` | Evergreen, Slate and Wireframe — shipped with EMR until the catalogue existed. |
 | [TalTech](themes/taltech.md) | `taltech` | Tallinn University of Technology, from the published TalTech design system. |
 | [AKK](themes/akk.md) | `akk` | TEHIK's Andmekirjelduskeskkond — the Estonian health-data description environment. |
+| [LMB](themes/lmb.md) | `lmb` | Lietuvos medicinos biblioteka — the Lithuanian Health Sciences Library. |
 
 ## How a pack works
 

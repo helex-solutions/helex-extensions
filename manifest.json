@@ -133,6 +133,29 @@
           ]
         }
       ]
+    },
+    {
+      "id": "lmb",
+      "name": "LMB",
+      "description": "Lietuvos medicinos biblioteka — the Lithuanian Health Sciences Library.",
+      "provides": [
+        "theme"
+      ],
+      "url": "https://helex-solutions.github.io/helex-extensions/packs/lmb.js",
+      "sha256": "907e8961a6cbd7023748142010cd67d8cb0b2d4cf3f257f554fad4d3cc39eb6a",
+      "bytes": 2491,
+      "themes": [
+        {
+          "key": "lmb",
+          "name": "LMB",
+          "algorithm": "light",
+          "swatch": [
+            "#0079BF",
+            "#36373D",
+            "#EEEEEE"
+          ]
+        }
+      ]
     }
   ]
 }

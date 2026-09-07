@@ -8,3 +8,4 @@
 - [Classic Helex palettes](themes/legacy.md)
 - [TalTech](themes/taltech.md)
 - [AKK](themes/akk.md)
+- [LMB](themes/lmb.md)
