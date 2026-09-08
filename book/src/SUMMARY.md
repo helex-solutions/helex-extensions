@@ -9,3 +9,4 @@
 - [TalTech](themes/taltech.md)
 - [AKK](themes/akk.md)
 - [LMB](themes/lmb.md)
+- [Tervisekassa](themes/tervisekassa.md)

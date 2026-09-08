@@ -12,6 +12,7 @@ install names the packs it wants and gets exactly those in its theme picker.
 | [TalTech](themes/taltech.md) | `taltech` | Tallinn University of Technology, from the published TalTech design system. |
 | [AKK](themes/akk.md) | `akk` | TEHIK's Andmekirjelduskeskkond — the Estonian health-data description environment. |
 | [LMB](themes/lmb.md) | `lmb` | Lietuvos medicinos biblioteka — the Lithuanian Health Sciences Library. |
+| [Tervisekassa](themes/tervisekassa.md) | `tervisekassa` | The Estonian Health Insurance Fund, from their published stiiliraamat 2026. |
 
 ## How a pack works
 

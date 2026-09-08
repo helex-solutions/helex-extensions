@@ -156,6 +156,29 @@
           ]
         }
       ]
+    },
+    {
+      "id": "tervisekassa",
+      "name": "Tervisekassa",
+      "description": "The Estonian Health Insurance Fund, from their published stiiliraamat 2026.",
+      "provides": [
+        "theme"
+      ],
+      "url": "https://helex-solutions.github.io/helex-extensions/packs/tervisekassa.js",
+      "sha256": "0857dfb7ce640440acf28f0026c83288db10c4315d28237236f989cf4861c346",
+      "bytes": 2972,
+      "themes": [
+        {
+          "key": "tervisekassa",
+          "name": "Tervisekassa",
+          "algorithm": "light",
+          "swatch": [
+            "#105B9E",
+            "#A03170",
+            "#F5F8FB"
+          ]
+        }
+      ]
     }
   ]
 }
