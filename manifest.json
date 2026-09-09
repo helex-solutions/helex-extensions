@@ -10,8 +10,8 @@
         "theme"
       ],
       "url": "https://helex-solutions.github.io/helex-extensions/packs/platform.js",
-      "sha256": "df13974007d84f2a492629fdb1d7eb6bfe7d9b833921d35da796879487c363f0",
-      "bytes": 5246,
+      "sha256": "a32c213380df7545ca6251c08787734dd74f7d03f7c0b8268deadd049d6651f7",
+      "bytes": 5280,
       "themes": [
         {
           "key": "helex",
@@ -40,7 +40,7 @@
           "swatch": [
             "#00FF41",
             "#3DDC84",
-            "#080B08"
+            "#060E06"
           ]
         }
       ]
