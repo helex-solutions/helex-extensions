@@ -58,7 +58,8 @@ if (!platform || !platform.ui) {
     "colorBgPage": "#F5F7FA",
     "colorBgCard": "#FFFFFF",
     "colorBgHover": "#F0F4F8",
-    "colorBorder": "#D1D9E0"
+    "colorBorder": "#D1D9E0",
+    "controlBorderColor": "#8A8F98"
   });
   ui.registerTheme("tedi", {
     "name": "TEDI",
