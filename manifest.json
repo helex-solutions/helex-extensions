@@ -10,8 +10,8 @@
         "theme"
       ],
       "url": "https://helex-solutions.github.io/helex-extensions/packs/platform.js",
-      "sha256": "627cfc72c1d60f8f305e06b3e2b9b938cb46a1a1390e6c8d23f488bda4eb076c",
-      "bytes": 5317,
+      "sha256": "25de8ef3628cd66438c9ecfb3b63dc5b0aff0ddb46b9f42ed72fe5d838f97acd",
+      "bytes": 7491,
       "themes": [
         {
           "key": "helex",
@@ -41,6 +41,16 @@
             "#00FF41",
             "#3DDC84",
             "#060E06"
+          ]
+        },
+        {
+          "key": "pai-ui",
+          "name": "PAI UI",
+          "algorithm": "light",
+          "swatch": [
+            "#105B9E",
+            "#A03170",
+            "#E8EDF3"
           ]
         }
       ]

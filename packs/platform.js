@@ -20,7 +20,8 @@ export const manifest = {
   "themes": [
     "helex",
     "tedi",
-    "matrix"
+    "matrix",
+    "pai-ui"
   ]
 };
 
@@ -160,6 +161,85 @@ if (!platform || !platform.ui) {
     "colorBgElevated": "#143314",
     "colorBorder": "#193E19",
     "controlBorderColor": "#3F8D3F"
+  });
+  ui.registerTheme("pai-ui", {
+    "name": "PAI UI",
+    "colorPrimary": "#105B9E",
+    "colorPrimaryHover": "#094A85",
+    "colorPrimarySolid": "#073A67",
+    "colorPrimaryLight": "#D9ECFF",
+    "colorSecondary": "#A03170",
+    "colorSecondaryHover": "#85285C",
+    "colorAccent": "#E882B3",
+    "colorSidebar": "#073A67",
+    "colorSidebarText": "#D6E2EE",
+    "colorSidebarActive": "#E882B3",
+    "colorSuccess": "#2D7A4B",
+    "colorWarning": "#8A6400",
+    "colorError": "#B3261E",
+    "colorInfo": "#105B9E",
+    "colorTextPrimary": "#1B1F24",
+    "colorTextSecondary": "#444A52",
+    "colorTextDisabled": "#9AA8B8",
+    "colorBgPage": "#E8EDF3",
+    "colorBgCard": "#FFFFFF",
+    "colorBgHover": "#EEF1F5",
+    "colorBorder": "#D3DBE5",
+    "controlBorderColor": "#8090A3",
+    "tableHeaderBg": "#FFFFFF",
+    "colorSuccessBg": "#E3F2E8",
+    "colorSuccessBorder": "#2D7A4B",
+    "colorWarningBg": "#FBF1D8",
+    "colorWarningBorder": "#8A6400",
+    "colorErrorBg": "#FBE9E7",
+    "colorErrorBorder": "#B3261E",
+    "colorInfoBg": "#D9ECFF",
+    "colorInfoBorder": "#105B9E",
+    "colorSuccessBorderSubtle": "#A3C8B1",
+    "colorWarningBorderSubtle": "#D3C08C",
+    "colorErrorBorderSubtle": "#E2A5A1",
+    "colorInfoBorderSubtle": "#93B9DD",
+    "colorBorderSubtle": "#E5E9EF",
+    "fontFamily": "'Roboto', arial, sans-serif",
+    "fontSizeBase": 14,
+    "borderRadiusSm": 8,
+    "borderRadiusMd": 8,
+    "borderRadiusLg": 24,
+    "buttonRadius": 999,
+    "buttonPaddingInline": 20,
+    "controlHeight": 40,
+    "controlHeightSM": 32,
+    "controlHeightLG": 48,
+    "spacing": {
+      "pagePadding": {
+        "comfortable": 32,
+        "default": 24,
+        "compact": 16,
+        "tiny": 12
+      },
+      "tableCell": {
+        "comfortable": {
+          "block": 12,
+          "inline": 14,
+          "editRow": 60
+        },
+        "default": {
+          "block": 10,
+          "inline": 12,
+          "editRow": 48
+        },
+        "compact": {
+          "block": 6,
+          "inline": 8,
+          "editRow": 40
+        },
+        "tiny": {
+          "block": 4,
+          "inline": 6,
+          "editRow": 34
+        }
+      }
+    }
   });
 }
 
