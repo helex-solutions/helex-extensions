@@ -5,13 +5,13 @@
     {
       "id": "platform",
       "name": "Helex platform themes",
-      "description": "Helex, TEDI and Matrix — the three themes EMR ships with. Included for reference.",
+      "description": "Helex, TEDI, Matrix and PAI UI — the themes EMR ships with. Included for reference.",
       "provides": [
         "theme"
       ],
       "url": "https://helex-solutions.github.io/helex-extensions/packs/platform.js",
-      "sha256": "25de8ef3628cd66438c9ecfb3b63dc5b0aff0ddb46b9f42ed72fe5d838f97acd",
-      "bytes": 7491,
+      "sha256": "7a10c64aa2d219075aad35790747e2fbed73bac18f8aa0353e85279dc6b9b77b",
+      "bytes": 7882,
       "themes": [
         {
           "key": "helex",
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "key": "pai-ui",
+          "key": "pai",
           "name": "PAI UI",
           "algorithm": "light",
           "swatch": [
@@ -63,8 +63,8 @@
         "theme"
       ],
       "url": "https://helex-solutions.github.io/helex-extensions/packs/legacy.js",
-      "sha256": "77135f19938e70f1c942c37c84fa69c6c75bedc925de9128c0ff5addfdc9354e",
-      "bytes": 3909,
+      "sha256": "cc414f21fd4bdbf5bfc7b32b9bebdf9a8ba94f600d7b2c7271938cd34395612e",
+      "bytes": 3968,
       "themes": [
         {
           "key": "evergreen",

@@ -80,6 +80,9 @@ if (!platform || !platform.ui) {
   });
   ui.registerTheme("wireframe", {
     "name": "Wireframe",
+    "traits": {
+      "presetColors": "desaturated"
+    },
     "colorPrimary": "#595959",
     "colorPrimaryHover": "#404040",
     "colorPrimaryLight": "#F0F0F0",
