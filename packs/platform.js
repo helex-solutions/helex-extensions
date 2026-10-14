@@ -174,7 +174,9 @@ if (!platform || !platform.ui) {
       "selection": "tonal",
       "icons": "material",
       "focusRing": "outline",
-      "presetColors": "themed"
+      "presetColors": "themed",
+      "avatar": "solid",
+      "closeButton": "end"
     },
     "colorPrimary": "#105B9E",
     "colorPrimaryHover": "#094A85",
@@ -213,6 +215,7 @@ if (!platform || !platform.ui) {
     "colorInfoBorderSubtle": "#93B9DD",
     "colorBorderSubtle": "#E5E9EF",
     "fontFamily": "'Roboto', arial, sans-serif",
+    "displayFontFamily": "'Rubik', 'Roboto', arial, sans-serif",
     "fontSizeBase": 14,
     "borderRadiusSm": 8,
     "borderRadiusMd": 8,
