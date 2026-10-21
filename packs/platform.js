@@ -176,7 +176,8 @@ if (!platform || !platform.ui) {
       "focusRing": "outline",
       "presetColors": "themed",
       "avatar": "solid",
-      "closeButton": "end"
+      "closeButton": "end",
+      "typeScale": "even"
     },
     "colorPrimary": "#105B9E",
     "colorPrimaryHover": "#094A85",
@@ -239,6 +240,10 @@ if (!platform || !platform.ui) {
         "md": 36,
         "sm": 28
       }
+    },
+    "inputPaddingInline": {
+      "md": 12,
+      "sm": 8
     },
     "componentTextFollowsDensity": false,
     "spacing": {
