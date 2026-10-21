@@ -214,8 +214,8 @@ if (!platform || !platform.ui) {
     "colorErrorBorderSubtle": "#E2A5A1",
     "colorInfoBorderSubtle": "#93B9DD",
     "colorBorderSubtle": "#E5E9EF",
-    "fontFamily": "'Noto Sans', arial, sans-serif",
-    "displayFontFamily": "'Rubik', 'Noto Sans', arial, sans-serif",
+    "fontFamily": "'Inter', arial, sans-serif",
+    "displayFontFamily": "'Rubik', 'Inter', arial, sans-serif",
     "fontSizeBase": 14,
     "borderRadiusSm": 8,
     "borderRadiusMd": 8,
@@ -229,20 +229,24 @@ if (!platform || !platform.ui) {
     "buttonPaddingInline": 20,
     "controlHeight": 40,
     "controlHeightSM": 32,
-    "controlHeightLG": 48,
+    "controlHeightLG": 40,
+    "densities": [
+      "default",
+      "compact"
+    ],
+    "densityControlHeights": {
+      "compact": {
+        "md": 36,
+        "sm": 28
+      }
+    },
+    "componentTextFollowsDensity": false,
     "spacing": {
       "pagePadding": {
-        "comfortable": 32,
         "default": 24,
-        "compact": 16,
-        "tiny": 12
+        "compact": 16
       },
       "tableCell": {
-        "comfortable": {
-          "block": 12,
-          "inline": 14,
-          "editRow": 60
-        },
         "default": {
           "block": 10,
           "inline": 12,
@@ -252,11 +256,6 @@ if (!platform || !platform.ui) {
           "block": 6,
           "inline": 8,
           "editRow": 40
-        },
-        "tiny": {
-          "block": 4,
-          "inline": 6,
-          "editRow": 34
         }
       }
     }
