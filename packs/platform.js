@@ -185,6 +185,7 @@ if (!platform || !platform.ui) {
     "colorPrimaryLight": "#D9ECFF",
     "colorSecondary": "#A03170",
     "colorSecondaryHover": "#85285C",
+    "colorSecondaryLight": "#FBE1EE",
     "colorAccent": "#E882B3",
     "colorSidebar": "#073A67",
     "colorSidebarText": "#D6E2EE",
